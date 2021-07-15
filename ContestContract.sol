@@ -1,7 +1,3 @@
-# ContestSmartContract
-SmartContract для проведения розыгрыша
-
-
 pragma solidity >=0.7.0 <0.9.0;
 
 contract ReviewsContest {
@@ -43,57 +39,3 @@ contract ReviewsContest {
     
     event Win(uint256 id, bytes32 identifier);
 }
-
-
-
-ABI 
-
-[
-    {
-        "inputs": [],
-        "stateMutability": "nonpayable",
-        "type": "constructor"
-    },
-    {
-        "anonymous": false,
-        "inputs": [
-            {
-                "indexed": false,
-                "internalType": "uint256",
-                "name": "id",
-                "type": "uint256"
-            },
-            {
-                "indexed": false,
-                "internalType": "bytes32",
-                "name": "identifier",
-                "type": "bytes32"
-            }
-        ],
-        "name": "Win",
-        "type": "event"
-    },
-    {
-        "inputs": [
-            {
-                "internalType": "uint256",
-                "name": "requiredWinnersCount",
-                "type": "uint256"
-            },
-            {
-                "internalType": "uint256[]",
-                "name": "ids",
-                "type": "uint256[]"
-            },
-            {
-                "internalType": "bytes32[]",
-                "name": "identifiers",
-                "type": "bytes32[]"
-            }
-        ],
-        "name": "playout",
-        "outputs": [],
-        "stateMutability": "nonpayable",
-        "type": "function"
-    }
-]
