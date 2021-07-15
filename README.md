@@ -2,10 +2,10 @@
 SmartContract для проведения розыгрыша
 
 
-pragma solidity >=0.7.0 <0.9.0;
+    pragma solidity >=0.7.0 <0.9.0;
 
-contract ReviewsContest {
-    address private owner;
+    contract ReviewsContest {
+        address private owner;
     
     constructor() {
         owner = msg.sender;
